@@ -10,7 +10,7 @@ const booksModel = require("./models/books")
 const cartModel = require("./models/cart")
 
 const MongodbUrl = process.env.MONGO_URL
-mongoose.connect(MongodbUrl,{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(MongodbUrl);
 
 app.use(cors())
 app.use(express.json())
